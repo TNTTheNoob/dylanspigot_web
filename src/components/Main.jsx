@@ -1,11 +1,9 @@
 import Message from '@mui/icons-material/Message';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Alert, AlertTitle, Box, Button, Snackbar, Tooltip, Typography } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Snackbar, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { SERVER_IP } from '../App';
-import logo from './../img/logo.png';
 import './Main.css';
-import {ArrowDownward, ArrowDownwardOutlined, ArrowDownwardSharp, Download, GitHub} from "@mui/icons-material";
+import {Download, GitHub} from "@mui/icons-material";
 
 export const Main = () => {
     const [state, setState] = useState({
@@ -13,24 +11,12 @@ export const Main = () => {
         showCopiedNotification: false
     });
 
-    function showCopiedAlert() {
-        console.log('showing copy alert');
-        setState(prevState => ({
-            ...prevState,
-            showCopiedNotification: true
-        }));
-    }
 
     function closeCopiedAlert() {
         setState(prevState => ({
             ...prevState,
             showCopiedNotification: false
         }));
-    }
-
-    function copyIpToClipboard() {
-        navigator.clipboard.writeText(SERVER_IP);
-        showCopiedAlert();
     }
 
     useEffect(() => {
