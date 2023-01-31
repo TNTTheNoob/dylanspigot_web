@@ -1,8 +1,8 @@
-# 🚀 Neptune Website
-Website for the Neptune Minecraft server (coming soon)
+# 🚀 Dylan Spigot Website
+Website for the Dylan Spigot server software (https://dylanspigot.men)
 
 ![GNU AGPL v3](https://img.shields.io/github/license/TNT10128/neptune_web?style=for-the-badge)
-![Codefactor code quality](https://img.shields.io/codefactor/grade/github/TNT10128/neptune_web?style=for-the-badge)
+![Codefactor code quality](https://img.shields.io/codefactor/grade/github/TNTTheNoob/dylanspigot_web?style=for-the-badge)
 
 ## Screenshot
 ![Neptune website screenshot](https://i.imgur.com/wnMq1et.png)
