@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { SERVER_IP } from '../App';
 import logo from './../img/logo.png';
 import './Main.css';
+import {ArrowDownward, ArrowDownwardOutlined, ArrowDownwardSharp, Download, GitHub} from "@mui/icons-material";
 
 export const Main = () => {
     const [state, setState] = useState({
@@ -67,28 +68,27 @@ export const Main = () => {
                 sx={{ boxShadow: 20 }}
             >
                 <div class="main-text-container">
-                    <img src={logo} alt="Neptune logo" width="96px"></img>
+
                     <Typography variant="h3" component="h1" className="title" align="center">
-                        Neptune
+                        Dylan Spigot
                     </Typography>
                 </div>
 
                 <Typography variant="subtitle1" component="p" className="subtitle" align="center">
-                    Creating new experiences for competitive Minecraft players worldwide.
+                    The best Minecraft server software.
                 </Typography>
-                <Tooltip title="Click to copy IP">
-                    <Button
-                        color="info"
-                        variant="contained"
-                        sx={{ mb: 1 }}
-                        onClick={copyIpToClipboard}
-                    >
-                        Join&nbsp; <b id="playerCount">{state.playerCount}</b>&nbsp;other players on{' '}
-                        {SERVER_IP}
-                    </Button>
-                </Tooltip>
+
 
                 <span>
+                    <Button
+                        color="primary"
+                        variant="contained"
+                        sx={{ mr: 0.5 }}
+                        href={`https://github.com/TNTTheNoob/dylanspigotdownloads/releases/latest`}
+                    >
+                        <Download sx={{ mr: 0.5 }} />
+                        Download
+                    </Button>
                     <Button
                         color="primary"
                         variant="contained"
@@ -101,11 +101,11 @@ export const Main = () => {
                     <Button
                         color="primary"
                         variant="contained"
-                        sx={{ ml: 0.5 }}
-                        href={`https://store.${SERVER_IP}`}
+                        sx={{ mr: 0.5 }}
+                        href={`https://github.com/TNTTheNoob`}
                     >
-                        <ShoppingCartIcon sx={{ mr: 0.5 }} />
-                        Store
+                        <GitHub sx={{ mr: 0.5 }} />
+                        GitHub
                     </Button>
                 </span>
             </Box>
