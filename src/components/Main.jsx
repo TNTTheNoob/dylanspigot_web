@@ -79,7 +79,7 @@ export const Main = () => {
                         color="primary"
                         variant="contained"
                         sx={{ mr: 0.5 }}
-                        href="https://discord.com"
+                        href="https://discord.dylanspigot.men"
                     >
                         <Message sx={{ mr: 0.5 }} />
                         Discord
